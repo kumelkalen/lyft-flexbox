@@ -1,1 +1,3 @@
-common.css
+.flex-container{
+	display: flex;
+}
