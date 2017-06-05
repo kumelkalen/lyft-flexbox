@@ -6,38 +6,30 @@ body{
 
 video{
 	width: 100%;
-	position: absolute;
-	bottom: 50px;
-	z-index: -1;
+	position: absolute; /* Para poder posicionarlo*/
+	top: 0;
+	z-index: -1; /* Le proporciona un menor valor en el orden de aparición */
 }
 
 #menu{
-	position: fixed;
-	top:0;
+	align-items: baseline; /* Toda la línea del nav queda en la parte superior*/
+	justify-content: space-between;/* Llevamos los dos elementos a los extremos*/
+}
+
+.menu{
+	width:50%;
+	justify-content: space-around; /* Separamos cada elemento que contiene el div class menu*/
+	padding-right: 10%;
+}
+
+.cont-logo{   /* Le damos al logo un espacio determinado en el cual moverse */
+	width: 20%;
+	justify-content: center; /* Lo centramos dentro de este espacio */
 }
 
 .logo{
 	width:60px;
 	height: 40px;
-
-}
-
-.menu{
-	display: flex;
-	
-}
-
-ul{
-	display: flex;
-	
-}
-
-li{
-	display: flex; 
-	flex-flow: row;
-	justify-content: space-between;
-	
-
 }
 
 a{
@@ -46,8 +38,5 @@ a{
 	font-weight: bolder;
 }
 
-div img{
-	width: 100%;
 
-}
 
