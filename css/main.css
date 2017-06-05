@@ -12,7 +12,7 @@ video{
 	z-index: -1; /* Le proporciona un menor valor en el orden de aparición */
 }
 
-#menu{
+.cont-menu{
 	width:100%;
 	height: 80px;
 	position: fixed; /* Un menú que se mantenga en pantalla */
@@ -42,7 +42,7 @@ video{
 	height: 40px;
 }
 
-nav div div a{
+.letra{
 	text-decoration:none;
 	color: white;
 }
@@ -57,15 +57,43 @@ nav div div a:hover{ /* Cambios al posicionarse sobre a */
 	padding:15%;
 }
  
+/* nav 2 */
+
 .boton-signup{
-	display:none; /* Lo mantiene oculto */
 	border: 1px solid #FF00BF;
 	border-radius: 5px;
 	padding:15%;
 	color: #FF00BF;
 }
 
+.display-boton{
+	display: none;
+}
 
+.nav2{
+	position:fixed;
+	height: 80px; /* Ponemos los mismos datos que nuestro anterior nav (cont-menu) */
+	width: 100%;
+	z-index: 1000;
+	top: 0; 
+	align-items: center; 
+	justify-content: space-between;
+	background-color: white; 
+}
+
+.letra2{ /* Estilo de letra  nav 2*/
+	text-decoration:none;
+	color: #333447;
+}
+
+.menu2{
+	width:30%;
+	height: 40%;
+	justify-content: space-around; /* Separamos cada elemento que contiene el div class menu*/
+	align-items: center;
+	padding-right: 10%;
+	color: #333447;
+	}
 
 
 
