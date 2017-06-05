@@ -1,6 +1,7 @@
 /*font-family: 'Montserrat', sans-serif;*/
 body{
 	margin:0 auto;
+	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -12,13 +13,22 @@ video{
 }
 
 #menu{
-	align-items: baseline; /* Toda la línea del nav queda en la parte superior*/
+	width:100%;
+	height: 80px;
+	position: fixed; /* Un menú que se mantenga en pantalla */
+	z-index: 1000; /* Que se posicione sobre todos los otros elementos*/
+	top: 0; /* Se mantenga en la parte superior*/
+	align-items: center; /* Toda la línea del nav queda en la parte superior*/
 	justify-content: space-between;/* Llevamos los dos elementos a los extremos*/
+	flex-wrap: nowrap;
+	
 }
 
 .menu{
-	width:50%;
+	width:30%;
+	height: 40%;
 	justify-content: space-around; /* Separamos cada elemento que contiene el div class menu*/
+	align-items: center;
 	padding-right: 10%;
 }
 
@@ -32,11 +42,32 @@ video{
 	height: 40px;
 }
 
-a{
+nav div div a{
 	text-decoration:none;
 	color: white;
-	font-weight: bolder;
 }
+
+nav div div a:hover{ /* Cambios al posicionarse sobre a */
+	color: #FF00BF; /* Color de letra distinto para insinuar que se puede presionar */
+}
+
+.boton-login{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding:15%;
+}
+ 
+.boton-signup{
+	display:none; /* Lo mantiene oculto */
+	border: 1px solid #FF00BF;
+	border-radius: 5px;
+	padding:15%;
+	color: #FF00BF;
+}
+
+
+
+
 
 
 
