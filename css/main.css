@@ -86,15 +86,6 @@ nav div div a:hover{ /* Cambios al posicionarse sobre a */
 	color: #333447;
 }
 
-.menu2{
-	width:30%;
-	height: 40%;
-	justify-content: space-around; /* Separamos cada elemento que contiene el div class menu*/
-	align-items: center;
-	padding-right: 10%;
-	color: #333447;
-	}
-
 
 
 
