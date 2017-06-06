@@ -2,3 +2,15 @@
 	display: flex;
 }
 
+.foot{
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.letra{
+	text-decoration:none;
+	color: white;
+}

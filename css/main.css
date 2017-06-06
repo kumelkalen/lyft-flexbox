@@ -7,11 +7,9 @@ body{
 
 video{
 	width: 100%;
-	position: absolute; /* Para poder posicionarlo*/
-	top: 0;
-	z-index: -1; /* Le proporciona un menor valor en el orden de aparición */
 }
 
+/* Sección del menú */
 .cont-menu{
 	width:100%;
 	height: 80px;
@@ -42,12 +40,7 @@ video{
 	height: 40px;
 }
 
-.letra{
-	text-decoration:none;
-	color: white;
-}
-
-nav div div a:hover{ /* Cambios al posicionarse sobre a */
+a:hover{ /* Cambios al posicionarse sobre a */
 	color: #FF00BF; /* Color de letra distinto para insinuar que se puede presionar */
 }
 
@@ -86,6 +79,41 @@ nav div div a:hover{ /* Cambios al posicionarse sobre a */
 	color: #333447;
 }
 
+/* Sección del footer*/
+footer{
+	width:100%;
+	height: 50%;
+	background-color: #333447;
+	position: absolute;
+	bottom: -5;
+
+}
+
+.links-container{ /* Espacio en el que se acomodarán los divs */
+	justify-content: space-around;
+	width: 80%;
+	height: 80%;
+}
+
+.cont-images{ /* Espacio en el que se acomodarán las imágenes */
+	width:100px;
+	height: 200px;
+	justify-content: space-around;
+}
+
+.images{ 
+	width:100%; /*Que se acomode al ancho del contenedor */
+	height: 30px; /* Alto propio definido */
+}
+
+.title{
+	font-weight: bold;
+}
+
+.title:hover{
+	text-decoration: underline;
+	color: white;
+}
 
 
 
